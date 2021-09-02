@@ -14,5 +14,5 @@ class Config():
     """
 
     SECRET_KEY = os.environ.get('SECRET_KEY') or "You will never guess"
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:--PW--@127.0.0.1:5432/drone-collection' or 'sqlite:///' + os.path.join(basedir, 'app.db')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + \
     SQLALCHEMY_TRACK_MODIFICATIONS = False # Turn off update messages from the sqlalchemy
